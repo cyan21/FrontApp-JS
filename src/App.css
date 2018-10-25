@@ -3,22 +3,107 @@
   font-size: 5vmin;
   min-height: 20vmin;
   text-align: center;
-
 }
 
+/*
+BANNER TOP
+*/
+
+.Halloween {
+  background-color: black;
+  font-size: 5vmin;
+  color: whitesmoke;
+  min-height: 20vmin;
+  text-align: center;
+}
+
+/*
+CONTAINER
+*/
+
+
 .Day-img {
-  background-color: purple;
+/*  background-color: purple;*/
   min-height: 100vmin;
   min-width: 35%;
   float: left; 
 }
 
 .Day-desc {
-  background-color: red;
+/*  background-color: red;*/
   min-height: 100vmin;
-  min-width: 65%;
+  max-width: 65%;
   float: left; 
+  opacity: 0.5;
 }
+
+/*
+Gallery
+*/
+table.tr {
+  height: 100px;
+  width: 500px;
+  margin-right: 100px;
+}
+
+
+/*
+APP
+*/
+/*  
+
+*/
+
+.Halloween {
+  text-align: center;
+
+}
+
+.Halloween-back {
+  text-align: center;
+  min-width: 100%;
+  min-height: 100vmin;
+  background-repeat: no-repeat;
+  background-image: url("./assets/Halloween/Halloween-background.jpg");
+  background-size: 100% 100%;
+}
+
+.Unicorn {
+  text-align: center;
+  background-color: pink;
+  font-size: 5vmin;
+  color: whitesmoke;
+  min-height: 20vmin;
+
+}
+
+.Unicorn-back {
+  text-align: center;
+  min-width: 100%;
+  min-height: 100vmin;
+  background-repeat: no-repeat;
+  background-image: url("./assets/Unicorn/Unicorn-background.jpg");
+  background-size: 100% 100%;
+}
+
+.Normal {
+  text-align: center;
+  background-color: yellowgreen;
+  font-size: 5vmin;
+  color: whitesmoke;
+  min-height: 20vmin;
+
+}
+
+.Normal-back {
+  text-align: center;
+  min-width: 100%;
+  min-height: 100vmin;
+  background-repeat: no-repeat;
+  background-image: url("./assets/Normal/no-data-background.jpg");
+  background-size: 100% 100%;
+}
+
 
 .App {
   text-align: center;

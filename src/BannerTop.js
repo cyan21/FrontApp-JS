@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
-
 import './App.css';
 
 export default class BannerTop extends Component {
 
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
 
         var dayName = "Sunday",
             monthName = "January",
             todayDate = new Date(),
-            todayMsg = "";
+            todayMsg = "",
+            dayNum = todayDate.getDate();
 
         switch (todayDate.getDay()) {
             case 1: dayName = 'Monday';
@@ -45,19 +45,38 @@ export default class BannerTop extends Component {
             default:
                 break;
         }
-        todayMsg =  dayName + ',' + todayDate.getFullYear() + '-' + monthName + ' ' + todayDate.getDate();
+        
+        switch (dayNum) {
+            case 1: 
+            case 21:
+            case 31: dayNum += "st";
+                break;
+            case 2: 
+            case 22: dayNum += "nd";
+                break;
+            case 3: 
+            case 23: dayNum += "rd";
+                break;        
+            default: dayNum += "th";
+                break;
+        }
+
+        todayMsg =  dayName + ', ' + monthName + ' ' + dayNum;
+
 
         this.state = {
-            today: todayMsg
+            today: todayMsg,
         };
-    }
+
+    } // end constructor
 
     render() {
         return (
-            <div className="Test">
+
+            <div className={this.props.myTheme}>
                 Yay !! Today, we're {this.state.today}
-                <div>it's Unicorn Day</div>  
+                <div>it's {this.props.day} !!!</div>  
             </div>
         )
     }
-}
+}   
