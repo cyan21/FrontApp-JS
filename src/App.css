@@ -37,28 +37,6 @@ CONTAINER
   opacity: 0.5;
 }
 
-/*
-Gallery
-*/
-table.tr {
-  height: 100px;
-  width: 500px;
-  margin-right: 100px;
-}
-
-
-/*
-APP
-*/
-/*  
-
-*/
-
-.Halloween {
-  text-align: center;
-
-}
-
 .Halloween-back {
   text-align: center;
   min-width: 100%;
@@ -66,15 +44,6 @@ APP
   background-repeat: no-repeat;
   background-image: url("./assets/Halloween/Halloween-background.jpg");
   background-size: 100% 100%;
-}
-
-.Unicorn {
-  text-align: center;
-  background-color: pink;
-  font-size: 5vmin;
-  color: whitesmoke;
-  min-height: 20vmin;
-
 }
 
 .Unicorn-back {
@@ -86,15 +55,6 @@ APP
   background-size: 100% 100%;
 }
 
-.Normal {
-  text-align: center;
-  background-color: yellowgreen;
-  font-size: 5vmin;
-  color: whitesmoke;
-  min-height: 20vmin;
-
-}
-
 .Normal-back {
   text-align: center;
   min-width: 100%;
@@ -102,6 +62,46 @@ APP
   background-repeat: no-repeat;
   background-image: url("./assets/Normal/no-data-background.jpg");
   background-size: 100% 100%;
+}
+
+/*
+Gallery
+*/
+table.tr {
+  height: 100px;
+  width: 500px;
+  margin-right: 100px;
+}
+
+
+/*
+TO REMOVE
+
+
+
+.Halloween {
+  text-align: center;
+
+}
+
+.Unicorn {
+  text-align: center;
+  background-color: pink;
+  font-size: 5vmin;
+  color: whitesmoke;
+  min-height: 20vmin;
+
+}
+
+
+
+.Normal {
+  text-align: center;
+  background-color: yellowgreen;
+  font-size: 5vmin;
+  color: whitesmoke;
+  min-height: 20vmin;
+
 }
 
 
@@ -137,3 +137,4 @@ APP
     transform: rotate(360deg);
   }
 }
+*/
