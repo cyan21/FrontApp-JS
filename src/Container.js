@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import Gallery from './Gallery'
+import CustomGallery from "custom-gallery" 
 
 export default class Container extends Component {
 
@@ -30,7 +30,7 @@ export default class Container extends Component {
         return (
             
             <div className={theme + "-back"} >
-                <Gallery myPics={pics} myTheme={theme} />
+                <CustomGallery myPics={pics} myTheme={theme} />
                 <div className={c2}>
                     {this.props.desc}
                 </div>
