@@ -1,9 +1,9 @@
-FROM node:10-alpine 
+FROM docker.frogfather.sas.jfrog.internal/node:10-alpine 
  
 LABEL maintainer="yannc@jfrog.com"
 
-ARG ARTY_URL="http://192.168.41.41:8081/artifactory"
-ARG REGISTRY_URL="http://192.168.41.41:8081/artifactory/api/npm/npm-prod/"
+ARG ARTY_URL="http://frogfather.sas.jfrog.internal/artifactory"
+ARG REGISTRY_URL="http://frogfather.sas.jfrog.internal/artifactory/api/npm/npm-prod/"
 ARG BUILD_NUM
 
 RUN apk update && \
@@ -24,7 +24,7 @@ RUN jfrog rt c arty --interactive=false --url=$ARTY_URL --user=admin --password=
 RUN npm config set registry $REGISTRY_URL
 
 #RUN npm install 
-RUN jfrog rt npmi npm-prod --build-name=front-app --build-number=$BUILD_NUM
+RUN jfrog rt npmi npm-release --build-name=front-app --build-number=$BUILD_NUM
 
 RUN tar -czvf front-app.1.0.0.tar.gz public src/index.js  
 RUN jfrog rt u front-app.1.0.0.tar.gz generic-local/super-front-app/ --build-name=front-app --build-number=$BUILD_NUM
