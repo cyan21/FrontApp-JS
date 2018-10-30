@@ -18,7 +18,7 @@ class App extends Component {
   }
 
   componentWillMount() {
-    axios.get('http://192.168.21.21:4000/today?date=20181031')
+    axios.get('http://localhost:4000/today?date=20181031')
         .then(json =>  
             {
                 this.setState({
