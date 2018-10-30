@@ -7,7 +7,7 @@
     "react-dom": "^16.5.2",
     "react-scripts": "2.0.5",
     "axios": "^0.18.0",
-    "custom-gallery": "^0.1.0"
+    "custom-gallery": "1.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
