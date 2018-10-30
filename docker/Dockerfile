@@ -5,6 +5,7 @@ LABEL maintainer="yannc@jfrog.com"
 ARG ARTY_URL="http://frogfather.sas.jfrog.internal/artifactory"
 ARG REGISTRY_URL="http://frogfather.sas.jfrog.internal/artifactory/api/npm/npm/"
 ARG BUILD_NUM
+ARG APP_VERS
 
 RUN apk update && \
     apk upgrade && \
@@ -26,8 +27,8 @@ RUN npm config set registry $REGISTRY_URL
 #RUN npm install 
 RUN jfrog rt npmi npm --build-name=front-app --build-number=$BUILD_NUM
 
-RUN tar -czvf front-app.1.0.0.tar.gz public src/index.js  
-RUN jfrog rt u front-app.1.0.0.tar.gz generic-local/super-front-app/ --build-name=front-app --build-number=$BUILD_NUM
+RUN tar -czvf front-app.$APP_VERS.tar.gz public src/index.js  
+RUN jfrog rt u front-app.$APP_VERS.tar.gz generic-local/super-front-app/ --build-name=front-app --build-number=$BUILD_NUM
 RUN jfrog rt bce front-app $BUILD_NUM
 RUN jfrog rt bp  front-app $BUILD_NUM
  
