@@ -11,7 +11,7 @@ RUN apk update && \
     apk upgrade && \
     apk add git
 
-RUN git clone https://github.com/cyan21/FrontApp-JS.git   
+RUN git clone -b demo https://github.com/cyan21/FrontApp-JS.git   
 WORKDIR  FrontApp-JS
 
 # install JFrog CLI
