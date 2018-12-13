@@ -42,7 +42,7 @@ CONTAINER
   min-width: 100%;
   min-height: 100vmin;
   background-repeat: no-repeat;
-  background-image: url("./assets/Halloween/Halloween-background.jpg");
+  background-image: url("./background/Halloween-background.jpg");
   background-size: 100% 100%;
 }
 
@@ -51,7 +51,7 @@ CONTAINER
   min-width: 100%;
   min-height: 100vmin;
   background-repeat: no-repeat;
-  background-image: url("./assets/Unicorn/Unicorn-background.jpg");
+  background-image: url("./background/Unicorn-background.jpg");
   background-size: 100% 100%;
 }
 
@@ -60,7 +60,7 @@ CONTAINER
   min-width: 100%;
   min-height: 100vmin;
   background-repeat: no-repeat;
-  background-image: url("./assets/Normal/no-data-background.jpg");
+  background-image: url("./background/no-data-background.jpg");
   background-size: 100% 100%;
 }
 
