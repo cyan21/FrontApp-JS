@@ -11,12 +11,12 @@ export default class Container extends Component {
  
         if (`${this.props.myTheme}`.localeCompare("Unicorn") === 0) {
             console.log("Unicorn day")
-            pics = ["unicorn1-thumbnail.jpg", "unicorn2-thumbnail.jpg"]; 
+            pics = ["./images/Unicorn/unicorn1-thumbnail.jpg", "./images/Unicorn/unicorn2-thumbnail.jpg"]; 
         } 
         
         if (`${this.props.myTheme}`.localeCompare("Halloween") === 0) {
             console.log("Halloween")
-            pics = ["halloween1-thumbnail.jpg", "halloween2-thumbnail.jpg"]; 
+            pics = ["./images/Halloween/halloween1-thumbnail.jpg", "./images/Halloween/halloween2-thumbnail.jpg"]; 
         } 
 
         var theme = this.props.myTheme ? this.props.myTheme : "Normal";
@@ -25,6 +25,7 @@ export default class Container extends Component {
         console.log("theme :" + this.props.myTheme);
         console.log("themePics :" + pics[`${this.props.myTheme}`]);
 */        console.log("theme :" + theme);
+        console.log("pics :" + pics);
 
 
         return (
